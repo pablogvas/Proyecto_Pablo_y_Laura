@@ -14,6 +14,10 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    FooterComponent,
+    HeaderComponent
   ]
 })
 export class ModulesModule { }
