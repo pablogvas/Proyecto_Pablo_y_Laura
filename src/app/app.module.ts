@@ -1,3 +1,4 @@
+import { FooterComponent } from './modules/components/footer/footer.component';
 import { WelcomeComponent } from './modules/components/inicio/welcome/welcome.component'
 import { ListaProdutosComponent } from './modules/components/producto/lista-produtos/lista-produtos.component';
 
@@ -20,7 +21,8 @@ import { HeaderComponent } from './modules/components/header/header.component';
     ListaProdutosComponent,
     FormularioComponent,
     NavComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

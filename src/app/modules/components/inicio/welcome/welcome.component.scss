@@ -1,0 +1,27 @@
+.div-welcome {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #F2F2F2;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    
+    .titulo-welcome {
+      font-size: 32px;
+      color: #333333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .parrafo-welcome {
+      font-size: 16px;
+      color: #666666;
+      line-height: 1.5;
+      text-align: justify;
+      margin-bottom: 10px;
+      
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+  
