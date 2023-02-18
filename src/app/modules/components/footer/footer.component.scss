@@ -1,8 +1,10 @@
 .footer {
+  position: fixed;
+  bottom: 0;
+  width: 99%;
   background-color: #333333;
   color: #FFFFFF;
   text-align: center;
-  padding: 10px;
   
   .redes-sociales {
     list-style: none;
