@@ -1,0 +1,42 @@
+<div class="container">
+  <h2 class="title">Lista de productos ({{ products.length }})</h2>
+
+  <div class="search">
+    <input
+      type="text"
+      id="filter"
+      [(ngModel)]="filterBy"
+      placeholder="Buscador"
+    />
+  </div>
+
+  <ul class="cards">
+    <li
+      *ngFor="let product of products | filter : filterBy"
+      class="cards__item"
+    >
+      <div class="card">
+        <div class="card__image card__image--fence">
+          <img src="{{ product.image }}" alt="{{ product.name }}" />
+        </div>
+        <div class="card__content">
+          <div class="card__title">{{ product.name }}</div>
+          <p class="card__text">
+            {{ product.description }}
+          </p>
+          <p class="card__price">$ {{ product.price }}</p>
+          <div class="rating">
+            <ngb-rating
+              [max]="5"
+              [(rate)]="product.stars"
+              [readonly]="true"
+            ></ngb-rating>
+            <div>{{ product.stars }}</div>
+          </div>
+
+          <button class="btn btn--block card__btn">Editar</button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
